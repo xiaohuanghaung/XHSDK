@@ -1,15 +1,44 @@
 PODS:
-  - XHSDK (0.1.0)
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - MBProgressHUD (1.1.0)
+  - PPBadgeView (2.1.0)
+  - XHSDK (1.0.0):
+    - AFNetworking
+    - MBProgressHUD
+    - PPBadgeView
 
 DEPENDENCIES:
   - XHSDK (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - MBProgressHUD
+    - PPBadgeView
 
 EXTERNAL SOURCES:
   XHSDK:
     :path: "../"
 
 SPEC CHECKSUMS:
-  XHSDK: c264291bd56b6057db5deb3c5461879c8eaf7237
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  PPBadgeView: 167006b3497ebb6222942313a6b827e79791aae6
+  XHSDK: 72d80e5cbc3bd50d5c0c1599d03939a9d2de28f4
 
 PODFILE CHECKSUM: c34b388e1e6ff1386735f7bd6fb57778051dfd86
 

@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XHSDK'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of XHSDK.'
+  s.version          = '1.0.0'
+  s.summary          = 'XHSDK是一款工具类库'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,19 +18,29 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+是一款工具类库，包含了类别、基类等。
                        DESC
 
-  s.homepage         = 'https://github.com/18811574335@163.com/XHSDK'
+  s.homepage         = 'https://github.com/xiaohuanghaung/XHSDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '18811574335@163.com' => '18811574335' }
-  s.source           = { :git => 'https://github.com/18811574335@163.com/XHSDK.git', :tag => s.version.to_s }
+  s.author           = { 'xiaohuang' => '18811574335@163.com' }
+  s.source           = { :git => 'https://github.com/xiaohuanghaung/XHSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-
+  
   s.source_files = 'XHSDK/Classes/**/*'
+  
+  s.ios.vendored_frameworks = 'Frameworks/XHSDK.framework'
+  
+  s.resources = 'Frameworks/XHSDKResource.Bundle'
+  
+  s.dependency 'AFNetworking'
+  
+  s.dependency 'MBProgressHUD'
+  
+  s.dependency 'PPBadgeView'
   
   # s.resource_bundles = {
   #   'XHSDK' => ['XHSDK/Assets/*.png']
